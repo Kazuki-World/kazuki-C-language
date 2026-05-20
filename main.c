@@ -1,17 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
-  int beer, sake;
-  int total;
+  int general, major;
+  scanf("%d", &general);
+  scanf("%d", &major);
 
-  scanf("%d", &beer);
-  scanf("%d", &sake);
-  total = beer * 500 + sake * 700;
-
-  if (beer >= 5 || sake >= 3) {
-    total = total * 0.8;
+  if (general >= 32 && major >= 96) {
+    printf("OK\n");
+  } else {
+    printf("NG\n");
   }
-
-  printf("%d\n", total);
   return 0;
 }
